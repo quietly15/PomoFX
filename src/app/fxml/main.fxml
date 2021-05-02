@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="app.controllers.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutY="-2.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EC4649;">
+         <center>
+            <Label fx:id="timer" style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="00:00" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="110.0" />
+               </font>
+            </Label>
+         </center>
+         <top>
+            <BorderPane prefHeight="89.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <bottom>
+                  <Line endX="432.29290771484375" startX="-39.5" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets top="8.0" />
+                     </BorderPane.margin>
+                  </Line>
+               </bottom>
+               <left>
+                  <HBox prefHeight="88.0" prefWidth="296.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/tomato.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="70.0" top="50.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="pomodoroLabel" prefHeight="36.0" prefWidth="85.0" style="-fx-font-family: 'Barlow Condensed', sans-serif;;" text="PomoFX">
+                           <HBox.margin>
+                              <Insets left="15.0" top="50.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </left>
+               <right>
+                  <ImageView fx:id="settingsImage" fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../../images/settings.png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="70.0" top="50.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </right>
+               <center>
+                  <ImageView fx:id="infoImage" fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../../images/information.png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets left="130.0" top="50.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+            </BorderPane>
+         </top>
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #EC4649;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="startButton" alignment="CENTER" prefHeight="45.0" prefWidth="80.0" style="-fx-border-color: black;" text="Start">
+                     <HBox.margin>
+                        <Insets left="215.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="resetButton" alignment="CENTER" prefHeight="45.0" prefWidth="80.0" style="-fx-border-color: black;" text="Reset">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

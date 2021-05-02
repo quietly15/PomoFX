@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EC4649;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.InfoController">
+   <children>
+      <BorderPane layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <BorderPane prefHeight="89.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Label style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="About" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" top="50.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </top>
+               <bottom>
+                  <Line endX="432.29290771484375" startX="-39.5" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </top>
+         <center>
+            <Label alignment="TOP_CENTER" prefHeight="162.0" prefWidth="332.0" style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="Pomofx is a simple open source pomodoro organizer. This project was created for a portfolio, but I'm glad if anyone found it useful." textAlignment="CENTER" underline="true" wrapText="true" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </center>
+         <bottom>
+            <HBox prefHeight="107.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="telegramImage" fitHeight="61.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/telegram.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="230.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="githubImage" fitHeight="61.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/github.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

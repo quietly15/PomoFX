@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EC4649;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.SettingsController">
+   <children>
+      <BorderPane layoutY="-3.0" prefHeight="408.0" prefWidth="600.0">
+         <top>
+            <BorderPane prefHeight="89.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <bottom>
+                  <Line endX="432.29290771484375" startX="-39.5" BorderPane.alignment="CENTER" />
+               </bottom>
+               <center>
+                  <Label style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="Settings" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" top="50.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+         </top>
+         <bottom>
+            <HBox prefHeight="93.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="startButton" alignment="CENTER" prefHeight="45.0" prefWidth="80.0" style="-fx-border-color: black;" text="Save">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="215.0" right="10.0" top="40.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="resetButton" alignment="CENTER" prefHeight="45.0" prefWidth="80.0" style="-fx-border-color: black;" text="Back">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="239.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXSlider layoutX="202.0" layoutY="53.0" max="90.0" min="5.0" prefHeight="14.0" prefWidth="195.0">
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </JFXSlider>
+                  <Label layoutX="204.0" layoutY="33.0" style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="Focus">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXSlider layoutX="202.0" layoutY="100.0" max="90.0" min="5.0" prefHeight="14.0" prefWidth="195.0">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXSlider>
+                  <Label layoutX="204.0" layoutY="80.0" style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="Short break">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXSlider layoutX="203.0" layoutY="150.0" max="90.0" min="5.0" prefHeight="14.0" prefWidth="195.0">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXSlider>
+                  <Label layoutX="205.0" layoutY="130.0" style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="Long break">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXSlider layoutX="204.0" layoutY="200.0" max="12.0" min="1.0" prefHeight="14.0" prefWidth="195.0">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXSlider>
+                  <Label layoutX="205.0" layoutY="180.0" style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="Rounds">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="367.0" layoutY="35.0" style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="0 min" />
+                  <Label layoutX="367.0" layoutY="82.0" style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="0 min" />
+                  <Label layoutX="367.0" layoutY="132.0" style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="0 min" />
+                  <Label layoutX="361.0" layoutY="182.0" style="-fx-font-family: 'Barlow Condensed', sans-serif;" text="4 rounds" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
